@@ -1,11 +1,100 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-</head>
-<body>
-    
-</body>
+<html lang="en" data-theme="light">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Nature Plater</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Sora:wght@100..800&display=swap"
+      rel="stylesheet"
+    />
+
+    <link
+      href="https://cdn.jsdelivr.net/npm/daisyui@4.12.23/dist/full.min.css"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <style>
+      .font-sora {
+        font-family: "Sora", serif;
+      }
+    </style>
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              clifford: "#da373d",
+            },
+          },
+        },
+      };
+    </script>
+  </head>
+  <body class="font-sora">
+    <header>
+      <nav class="md:container mx-auto px-5 lg:px-10 border-b-2 border-green-600 sm:border-b-0">
+        <div class="navbar bg-base-100">
+          <div class="navbar-start">
+            <img class="w-24 lg:w-32" src="./images/logo-header.png" alt="" />
+          </div>
+          <div class="navbar-center hidden lg:flex">
+            <ul class="menu menu-horizontal px-1">
+              <li><a>Product</a></li>
+              <li><a>Services</a></li>
+              <li><a>Contact us</a></li>
+            </ul>
+          </div>
+          <div class="navbar-end gap-5">
+            <button class="btn btn-ghost btn-circle hidden sm:block">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                class="h-5 w-5"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke="currentColor"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"
+                />
+              </svg>
+            </button>
+            <img
+              class="w-5 lg:mr-5 hidden sm:block"
+              src="./images/cart-shopping-solid.svg"
+              alt=""
+            />
+            <button class="btn bg-white border-green-500 hidden sm:block">
+              Login
+            </button>
+            <button class="btn bg-green-600 text-white hidden sm:block">
+              Register
+            </button>
+            <img class="w-6 md:hidden" src="./images/bars-solid.svg" alt="" />
+          </div>
+        </div>
+      </nav>
+      <section class="my-20 bg-gradient-to-b from-white to-green-300">
+        <div class="text-center pb-8 px-5 space-y-8">
+            <h1 class="text-4xl lg:text-6xl font-semibold">Freshness <span class="text-green-600">You Can <br> Count</span> On, Prices You’ll Love!</h1>
+        <p>Shop your daily essentials at unbeatable prices. From fresh produce to pantry <br> staples, we’ve got you covered every day!</p>
+        </div>
+        <div class="place-self-center">
+            <img src="./images/hero-vegetables.png" alt="">
+        </div>
+      </section>
+    </header>
+
+    <main></main>
+
+    <footer></footer>
+  </body>
 </html>
