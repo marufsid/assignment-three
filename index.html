@@ -37,8 +37,10 @@
     </script>
   </head>
   <body class="font-sora">
-    <header>
-      <nav class="md:container mx-auto px-5 lg:px-10 border-b-2 border-green-600 sm:border-b-0">
+    <header class="container mx-auto">
+      <nav
+        class="md:container mx-auto px-5 lg:px-10 border-b-2 border-green-600 sm:border-b-0"
+      >
         <div class="navbar bg-base-100">
           <div class="navbar-start">
             <img class="w-24 lg:w-32" src="./images/logo-header.png" alt="" />
@@ -82,18 +84,75 @@
           </div>
         </div>
       </nav>
-      <section class="my-20 bg-gradient-to-b from-white to-green-300">
+      <section class="my-20 lg:my-24 bg-gradient-to-b from-white to-green-300">
         <div class="text-center pb-8 px-5 space-y-8">
-            <h1 class="text-4xl lg:text-6xl font-semibold">Freshness <span class="text-green-600">You Can <br> Count</span> On, Prices You’ll Love!</h1>
-        <p>Shop your daily essentials at unbeatable prices. From fresh produce to pantry <br> staples, we’ve got you covered every day!</p>
+          <h1 class="text-4xl lg:text-6xl font-semibold">
+            Freshness
+            <span class="text-green-600"
+              >You Can <br />
+              Count</span
+            >
+            On, Prices You’ll Love!
+          </h1>
+          <p>
+            Shop your daily essentials at unbeatable prices. From fresh produce
+            to pantry <br />
+            staples, we’ve got you covered every day!
+          </p>
         </div>
         <div class="place-self-center">
-            <img src="./images/hero-vegetables.png" alt="">
+          <img src="./images/hero-vegetables.png" alt="" />
         </div>
       </section>
     </header>
-
-    <main></main>
+    <main class="container mx-auto">
+        <!-- card section -->
+      <section class="my-24 px-5 lg:px-32">
+        <h2 class="text-2xl font-semibold text-green-600 mb-8">Services</h2>
+        <div class="grid grid-cols-1 lg:grid-cols-3 gap-10">
+          <div
+            class="card bg-gray-200 shadow-xl p-8 items-center"
+          >
+            <div class="avatar p-5 bg-white rounded-full">
+              <div class="w-24 rounded-full">
+                <img src="./images/service.png" />
+              </div>
+            </div>
+            <div class="card-body items-center text-center">
+              <h2 class="card-title">24/7 Services</h2>
+              <p>Services are available 24 hours a day, 7 days a week</p>
+            </div>
+          </div>
+          <div
+            class="card bg-gray-200 shadow-xl p-8 items-center"
+          >
+            <div class="avatar p-5 bg-white rounded-full">
+              <div class="w-24 rounded-full">
+                <img src="./images/delivery.png" />
+              </div>
+            </div>
+            <div class="card-body items-center text-center">
+              <h2 class="card-title">Fast Delivery</h2>
+              <p>Supports you with the fastest courier & delivery services.</p>
+            </div>
+          </div>
+          <div
+            class="card bg-gray-200 shadow-xl p-8 items-center"
+          >
+            <div class="avatar p-5 bg-white rounded-full">
+              <div class="w-24 rounded-full">
+                <img src="./images/healthy.png" />
+              </div>
+            </div>
+            <div class="card-body items-center text-center">
+              <h2 class="card-title">Healthy Products </h2>
+              <p>Eating a wide variety of nutritious fruits and vegetables.</p>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section></section>
+    </main>
 
     <footer></footer>
   </body>
